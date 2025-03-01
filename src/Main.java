@@ -4,8 +4,12 @@ import java.awt.*;
 
 public class Main {
 
+    public static final Font DEFAULT_FONT = new Font("Serif", Font.PLAIN, 15);
+
     public static void main(String[] args) {
+
         JFrame frame = new JFrame("survey form");
+        frame.setFont(DEFAULT_FONT);
         frame.setSize(600, 600);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -17,9 +21,11 @@ public class Main {
         panel.setBackground(Color.YELLOW);
 
         JLabel title = new JLabel("survey form");
+        title.setFont(DEFAULT_FONT);
         title.setHorizontalAlignment(JLabel.CENTER);
 
         JButton startButton = new JButton("Start");
+        startButton.setFont(DEFAULT_FONT);
         startButton.setAlignmentX(JButton.CENTER_ALIGNMENT);
 
         panel.add(title, BorderLayout.NORTH);
