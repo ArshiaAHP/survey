@@ -11,31 +11,31 @@ public class informationPage {
         panel.setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
         panel.setBackground(Color.YELLOW);
 
-        JLabel nameLabel = new JLabel("اسم");
+        JLabel nameLabel = new JLabel("Name");
         nameLabel.setAlignmentX(JLabel.CENTER_ALIGNMENT);
         JTextField nameField = new JTextField(15);
         nameField.setHorizontalAlignment(JTextField.CENTER);
         nameField.setAlignmentX(JTextField.CENTER_ALIGNMENT);
 
-        JLabel ageLabel = new JLabel("سن");
+        JLabel ageLabel = new JLabel("Age");
         ageLabel.setAlignmentX(JLabel.CENTER_ALIGNMENT);
         JTextField ageField = new JTextField(15);
         ageField.setHorizontalAlignment(JTextField.CENTER);
         ageField.setAlignmentX(JTextField.CENTER_ALIGNMENT);
 
-        JLabel emailLabel = new JLabel("ایمیل");
+        JLabel emailLabel = new JLabel("Email");
         emailLabel.setAlignmentX(JLabel.CENTER_ALIGNMENT);
         JTextField emailField = new JTextField(15);
         emailField.setHorizontalAlignment(JTextField.CENTER);
         emailField.setAlignmentX(JTextField.CENTER_ALIGNMENT);
 
-        JLabel levelLabel = new JLabel("سطح آشنایی با نرم افزارهای مشابه");
+        JLabel levelLabel = new JLabel("Level of experience with similar apps ");
         levelLabel.setAlignmentX(JLabel.CENTER_ALIGNMENT);
 
-        JRadioButton level1 = new JRadioButton("مبتدی");
-        JRadioButton level2 = new JRadioButton("متوسط");
-        JRadioButton level3 = new JRadioButton("پیشرفته");
-        JRadioButton level4 = new JRadioButton("بدون آشنایی");
+        JRadioButton level1 = new JRadioButton("Beginner");
+        JRadioButton level2 = new JRadioButton("Intermediate");
+        JRadioButton level3 = new JRadioButton("Advanced");
+        JRadioButton level4 = new JRadioButton("No Experience");
 
         ButtonGroup group = new ButtonGroup();
         group.add(level1);
@@ -43,7 +43,7 @@ public class informationPage {
         group.add(level3);
         group.add(level4);
 
-        JButton nextButton = new JButton("صفحه بعد");
+        JButton nextButton = new JButton("Next Page");
         nextButton.setAlignmentX(JButton.CENTER_ALIGNMENT);
         nextButton.addActionListener(e -> {
             frame.remove(panel);

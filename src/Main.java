@@ -5,7 +5,7 @@ import java.awt.*;
 public class Main {
 
     public static void main(String[] args) {
-        JFrame frame = new JFrame("فرم نظرسنجی");
+        JFrame frame = new JFrame("survey form");
         frame.setSize(600, 600);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -16,10 +16,10 @@ public class Main {
         panel.setBounds(0, 0, 600, 600);
         panel.setBackground(Color.YELLOW);
 
-        JLabel title = new JLabel("فرم نظرسنجی");
+        JLabel title = new JLabel("survey form");
         title.setHorizontalAlignment(JLabel.CENTER);
 
-        JButton startButton = new JButton("شروع!");
+        JButton startButton = new JButton("Start");
         startButton.setAlignmentX(JButton.CENTER_ALIGNMENT);
 
         panel.add(title, BorderLayout.NORTH);
